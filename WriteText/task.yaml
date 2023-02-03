@@ -1,0 +1,23 @@
+name: write-text
+powershellEntrypoint: "./Write-Text.ps1 -DoubleParam parameters('doubleParam') -BoolParam parameters('boolParam') -StringParam parmeters('stringParam') -ArrayParam parameters('arrayParam')"
+parameters:
+- name: stringParam  
+  default: some value
+  type: string
+  required: false # "string" param is optional and is being referenced from the script
+- name: boolParam
+  default: $True
+  type: bool
+  required: false 
+- name: intParam
+  default: 33
+  type: int
+  required: false # "int" param is also optional, but is not referenced from the script
+- name: doubleParam
+  default: 33.12
+  type: double
+  required: false
+- name: arrayParam
+  default: 2, 3, 4
+  type: array"
+  required: false

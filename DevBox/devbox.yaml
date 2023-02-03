@@ -1,0 +1,14 @@
+name: devbox-customization
+tasks:
+  - name: chocolatey
+    parameters:
+      - name: packages
+        value: git.install, nodejs
+  - name: write-text
+    parameters:
+      - name: boolParam
+        value: false
+      - name: stringParam
+        value: hello devbox
+      - name: arrayParam
+        value: 1, 2, 3
