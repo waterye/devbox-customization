@@ -12,7 +12,7 @@ param(
     [array]$ArrayParam
 )
 
-Write-Host "DoubleParam value is $DoubleParam"
-Write-Host "StringParam value is $StringParam"
-Write-Host "BoolParam value is $BoolParam"
-Write-Host "ArrayParam value is $ArrayParam"
+Write-Output "DoubleParam value is $DoubleParam"
+Write-Output "StringParam value is $StringParam"
+Write-Output "BoolParam value is $BoolParam"
+Write-Output "ArrayParam value is $ArrayParam"
