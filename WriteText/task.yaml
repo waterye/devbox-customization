@@ -1,7 +1,7 @@
 name: write-text
-powershellEntrypoint: "./Write-Text.ps1 -DoubleParam parameters('doubleParam') -BoolParam parameters('boolParam') -StringParam parmeters('stringParam') -ArrayParam parameters('arrayParam') > C:\\result.txt"
+powershellEntrypoint: .\Write-Text.ps1 -DoubleParam parameters("doubleParam") -BoolParam parameters("boolParam") -StringParam parmeters("stringParam") -ArrayParam parameters("arrayParam") > C:\\result.txt
 parameters:
-- name: stringParam  
+- name: stringParam
   default: some value
   type: string
   required: false # "string" param is optional and is being referenced from the script
@@ -19,5 +19,5 @@ parameters:
   required: false
 - name: arrayParam
   default: 2, 3, 4
-  type: array"
+  type: array
   required: false
