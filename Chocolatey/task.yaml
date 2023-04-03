@@ -1,6 +1,6 @@
 name: chocolatey
-powershellEntrypoint: "./Install-Chocolatey.ps1"
-parameters:
-- name: packages
-  type: array
-  required: false
+command: "./Install-Chocolatey.ps1"
+inputs:
+  package:
+    type: array
+    required: false
