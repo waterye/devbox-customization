@@ -2,9 +2,9 @@ name: devbox-customization
 setupTasks:
   - task: chocolatey
     inputs:
-      - packages: git.install, nodejs
+      packages: git.install, nodejs
   - task: write-text
     inputs:
-      - boolParam: false
-      - stringParam: hello devbox
-      - arrayParam: 1, 2, 3
+      boolParam: false
+      stringParam: hello devbox
+      arrayParam: 1, 2, 3
