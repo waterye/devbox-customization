@@ -1,6 +1,6 @@
 name: chocolatey
 command: "./Install-Chocolatey.ps1"
 inputs:
-  package:
+  packages:
     type: array
     required: false
