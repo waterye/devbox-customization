@@ -1,2 +1,2 @@
 name: chocolatey
-command: ".\Install-Chocolatey.ps1"
+command: .\Install-Chocolatey.ps1
