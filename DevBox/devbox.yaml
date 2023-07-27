@@ -4,6 +4,12 @@ hostInformation: general_a_8c32gb256ssd_v1
 supportsHibernation: false
 setupTasks:
   - task: chocolatey
+  - task: install-package
+    inputs:
+      package: git.install
+  - task: install-package
+    inputs:
+      package: vscode
   - task: write-text
     inputs:
       boolParam: false
