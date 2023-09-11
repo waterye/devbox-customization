@@ -6,7 +6,7 @@ inputs:
     defaultValue: some value
     required: false
   boolParam:
-    type: bool
+    type: boolean
     defaultValue: $True
     required: false
   intParam:
