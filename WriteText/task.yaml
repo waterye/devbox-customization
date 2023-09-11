@@ -1,5 +1,5 @@
 name: write-text
-command: .\Write-Text.ps1 -IntParam {{intParam}} -DoubleParam {{doubleParam}} -BoolParam {{boolParam}} -StringParam {{stringParam}} -ArrayParam {{arrayParam}}
+command: .\Write-Text.ps1 -NumParam {{numParam}} -BoolParam {{boolParam}} -StringParam {{stringParam}}
 inputs:
   stringParam:
     type: string
@@ -9,7 +9,7 @@ inputs:
     type: boolean
     defaultValue: $True
     required: false
-  intParam:
+  numParam:
     type: number
     defaultValue: 33
     required: false
