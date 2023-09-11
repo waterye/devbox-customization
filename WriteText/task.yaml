@@ -10,10 +10,6 @@ inputs:
     defaultValue: $True
     required: false
   intParam:
-    type: int
+    type: number
     defaultValue: 33
-    required: false
-  doubleParam:
-    type: double
-    defaultValue: 33.12
     required: false
