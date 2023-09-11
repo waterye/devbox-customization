@@ -6,7 +6,7 @@ param(
     [string]$StringParam,
 
     [Parameter()]
-    [boolean]$BoolParam,
+    [boolean]$BoolParam
 )
 
 Write-Output "NumParam value is $NumParam"
