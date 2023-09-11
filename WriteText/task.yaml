@@ -1,5 +1,5 @@
 name: write-text
-command: .\Write-Text.ps1 -IntParam {{intParam}} -DoubleParam {{doubleParam}} -BoolParam {{boolParam}} -StringParam {{stringParam}} -ArrayParam {{arrayParam}} > C:\\result.txt
+command: .\Write-Text.ps1 -IntParam {{intParam}} -DoubleParam {{doubleParam}} -BoolParam {{boolParam}} -StringParam {{stringParam}} -ArrayParam {{arrayParam}}
 inputs:
   stringParam:
     type: string
