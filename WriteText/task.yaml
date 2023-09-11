@@ -7,7 +7,7 @@ inputs:
     required: false
   boolParam:
     type: boolean
-    defaultValue: $True
+    defaultValue: True
     required: false
   numParam:
     type: number
