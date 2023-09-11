@@ -17,7 +17,3 @@ inputs:
     type: double
     defaultValue: 33.12
     required: false
-  arrayParam:
-    type: array
-    defaultValue: 2, 3, 4
-    required: false
