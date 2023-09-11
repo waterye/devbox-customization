@@ -9,7 +9,7 @@ param(
     [string]$StringParam,
 
     [Parameter()]
-    [bool]$BoolParam,
+    [boolean]$BoolParam,
 
     [Parameter()]
     [array]$ArrayParam
