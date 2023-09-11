@@ -1,9 +1,6 @@
 param(
     [Parameter()]
-    [int]$IntParam,
-
-    [Parameter()]
-    [double]$DoubleParam,
+    [number]$NumParam,
 
     [Parameter()]
     [string]$StringParam,
@@ -12,7 +9,6 @@ param(
     [boolean]$BoolParam,
 )
 
-Write-Output "IntParam value is $IntParam"
-Write-Output "DoubleParam value is $DoubleParam"
+Write-Output "NumParam value is $NumParam"
 Write-Output "StringParam value is $StringParam"
 Write-Output "BoolParam value is $BoolParam"
