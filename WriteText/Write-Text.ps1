@@ -1,6 +1,6 @@
 param(
     [Parameter()]
-    [number]$NumParam,
+    [int]$NumParam,
 
     [Parameter()]
     [string]$StringParam,
