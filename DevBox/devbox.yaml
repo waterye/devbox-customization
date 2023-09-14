@@ -14,4 +14,3 @@ setupTasks:
     inputs:
       boolParam: false
       stringParam: hello devbox
-      arrayParam: 1, 2, 3
