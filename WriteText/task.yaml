@@ -3,11 +3,11 @@ command: .\Write-Text.ps1 -NumParam {{numParam}} -BoolParam {{boolParam}} -Strin
 inputs:
   stringParam:
     type: string
-    defaultValue: some value
+    default: some value
     required: false
   boolParam:
     type: boolean
-    defaultValue: True
+    default: True
     required: false
   numParam:
     type: number
