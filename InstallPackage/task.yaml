@@ -5,3 +5,4 @@ inputs:
     type: string
     defaultValue: ""
     required: true
+rebootRequired: true
