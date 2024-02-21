@@ -10,7 +10,7 @@ setupTasks:
       package: git.install
   - task: install-package
     inputs:
-      package: vscode
+      package: visualstudio2022enterprise
   - task: write-text
     inputs:
       boolParam: false
