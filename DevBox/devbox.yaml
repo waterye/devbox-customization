@@ -11,7 +11,7 @@ tasks:
   - name: install-package
     parameters:
       package: vscode
-  - task: write-text
+  - name: write-text
     parameters:
       boolParam: false
       stringParam: hello devbox
