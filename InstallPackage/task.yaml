@@ -1,7 +1,8 @@
+$schema: 1.0
 name: install-package
 command: .\Install-Package.ps1 -Package {{package}}
-inputs:
+parameters:
   package:
     type: string
-    defaultValue: ""
+    default: ""
     required: true

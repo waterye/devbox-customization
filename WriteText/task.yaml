@@ -1,15 +1,16 @@
+$schema: 1.0
 name: write-text
 command: .\Write-Text.ps1 -NumParam {{numParam}} -BoolParam {{boolParam}} -StringParam {{stringParam}}
-inputs:
+parameters:
   stringParam:
     type: string
-    defaultValue: some value
+    default: some value
     required: false
   boolParam:
     type: boolean
-    defaultValue: True
+    default: True
     required: false
   numParam:
     type: number
-    defaultValue: 33
+    default: 33
     required: false
