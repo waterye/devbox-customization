@@ -5,13 +5,14 @@ hostInformation: general_i_8c32gb256ssd_v2
 supportsHibernation: false
 tasks:
   - name: chocolatey
+  - name: write-text
+    parameters:
+      boolParam: false
+      stringParam: hello devbox
+userTasks:
   - name: install-package
     parameters:
       package: git.install
   - name: install-package
     parameters:
       package: vscode
-  - name: write-text
-    parameters:
-      boolParam: false
-      stringParam: hello devbox
