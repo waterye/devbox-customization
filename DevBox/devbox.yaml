@@ -10,3 +10,7 @@ tasks:
       package: git.install
 userTasks:
   - name: winget
+  - name: winget
+  - name: winget
+  - name: winget
+  - name: winget
