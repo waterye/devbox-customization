@@ -8,5 +8,3 @@ tasks:
   - name: install-package
     parameters:
       package: git.install
-userTasks:
-  - name: DevHome Winget Apply
