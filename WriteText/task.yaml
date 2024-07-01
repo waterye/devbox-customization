@@ -1,4 +1,4 @@
-name: write-text
+name: _111
 command: .\Write-Text.ps1 -NumParam {{numParam}} -BoolParam {{boolParam}} -StringParam {{stringParam}}
 inputs:
   stringParam:
