@@ -350,7 +350,7 @@ else {
             $versionFlag = "-Version '$($Version)'"
         }
 
-        $process = Start-Process -FilePath "C:\Program Files\PowerShell\7\pwsh.exe" -NoNewWindow -PassThru -ArgumentList $($mtaFlag), "-Command `"Install-WinGetPackage -Id '$($Package)' $($versionFlag) | ConvertTo-Json -Depth 10 > $($tempOutFile)`""
+        $process = Start-Process -FilePath "C:\Program Files\PowerShell\7\pwsh.exe" -NoNewWindow -PassThru -ArgumentList $($mtaFlag), "-Command `"Install-WinGetPackage -Id '$($Package)' $($versionFlag) | ConvertTo-Json -Depth 10 > $($tempOutFile)`"" -Wait
         $dummy = $process.Handle # Cache the handle
         $process.WaitForExit()
         $installExitCode = $process.ExitCode
@@ -376,7 +376,7 @@ else {
     elseif ($ConfigurationFile) {
         Write-Host "Running installation of configuration file: $($ConfigurationFile)"
 
-        $process = Start-Process -FilePath "C:\Program Files\PowerShell\7\pwsh.exe" -NoNewWindow -PassThru -ArgumentList $($mtaFlag), "-Command `"Get-WinGetConfiguration -File '$($ConfigurationFile)' | Invoke-WinGetConfiguration -AcceptConfigurationAgreements | Select-Object -ExpandProperty UnitResults | ConvertTo-Json -Depth 10 > $($tempOutFile)`""
+        $process = Start-Process -FilePath "C:\Program Files\PowerShell\7\pwsh.exe" -NoNewWindow -PassThru -ArgumentList $($mtaFlag), "-Command `"Get-WinGetConfiguration -File '$($ConfigurationFile)' | Invoke-WinGetConfiguration -AcceptConfigurationAgreements | Select-Object -ExpandProperty UnitResults | ConvertTo-Json -Depth 10 > $($tempOutFile)`"" -Wait
         $dummy = $process.Handle # Cache the handle
         $process.WaitForExit()
         $installExitCode = $process.ExitCode
