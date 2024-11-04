@@ -5,7 +5,13 @@ tasks:
   - name: "@intrinsic/powershell"
     parameters:
       command: "Write-Host $env:PATH"
+  - name: "@intrinsic/winget"
+    parameters:
+      package: Microsoft.DotNet.SDK.8
 userTasks:
   - name: __INTRINSIC_PowerShell__
     parameters:
       command: "Write-Host $env:PATH"
+  - name: __INTRINSIC_Winget__
+    parameters:
+      package: Bruno.Bruno
