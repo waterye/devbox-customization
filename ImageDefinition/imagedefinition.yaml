@@ -2,7 +2,7 @@ $schema: 1.0
 name: image-definition-with-intrinsic-task
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
 tasks:
-  - name: __INTRINSIC_PowerShell__
+  - name: "@intrinsic/powershell"
     parameters:
       command: "Write-Host $env:PATH"
 userTasks:
