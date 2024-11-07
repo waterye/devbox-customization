@@ -9,3 +9,6 @@ userTasks:
   - name: quickstart/powershell
     parameters:
       command: "Write-Host $(whoami)"
+  - name: ~/powershell
+    parameters:
+      command: "Write-Host $(whoami)"
