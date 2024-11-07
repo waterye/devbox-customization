@@ -12,3 +12,6 @@ userTasks:
   - name: ~/powershell
     parameters:
       command: "Write-Host $(whoami)"
+  - name: $primitives/powershell
+    parameters:
+      command: "Write-Host $(whoami)"
