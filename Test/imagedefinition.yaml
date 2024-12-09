@@ -2,8 +2,3 @@ $schema: "1.0"
 name: iis-test
 image: MicrosoftVisualStudio_visualstudio2019plustools_vs-2019-pro-general-win11-m365-gen2
 tasks:
-    - name: powershell
-      parameters:
-        command: |
-          DISM /online /enable-feature /all /featurename:IIS-ASPNET45
-          C:\Windows\System32\inetsrv\appcmd.exe set AppPool DefaultAppPool /processModel.identityType:LocalService
