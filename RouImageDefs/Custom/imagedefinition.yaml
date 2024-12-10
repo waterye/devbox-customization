@@ -1,0 +1,7 @@
+$schema: 1.0
+name: custom-image-definition-sample
+image: /RouComputeGallery/ImageDefinition01@1.0.0
+tasks:
+  - name: choco
+    parameters:
+      package: notepadplusplus.install
