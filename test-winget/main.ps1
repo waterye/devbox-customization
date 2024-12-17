@@ -166,7 +166,7 @@ function InstallWinGet {
     if (!($wingetClientPackage)) {
         Write-Host "Installing Microsoft.Winget.Client -RequiredVersion 1.9.25190"
         Install-Module Microsoft.WinGet.Client -Scope $PsInstallScope -RequiredVersion 1.9.25190
-        pwsh.exe -MTA -Command "Install-Module Microsoft.WinGet.Client -Scope $PsInstallScope"
+        pwsh.exe -MTA -Command "Install-Module Microsoft.WinGet.Client -Scope $PsInstallScope -RequiredVersion 1.9.25190"
         Write-Host "Done Installing Microsoft.Winget.Client"
     }
     else {
