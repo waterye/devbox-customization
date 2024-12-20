@@ -1,0 +1,17 @@
+$schema: 1.0
+name: custom-image-sample
+image: RouComputeGallery/RouCustomImageDefinition@1.0.0
+tasks:
+  - name: choco
+    parameters:
+      package: notepadplusplus.install
+  - name: powershell
+    parameters:
+      command: "Write-Host $(whoami)"
+  - name: ~/powershell
+    parameters:
+      command: "Write-Host $(whoami)"
+userTasks:
+  - name: quickstart/powershell
+    parameters:
+      command: "Write-Host $(whoami)"
