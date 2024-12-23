@@ -1,6 +1,6 @@
 $schema: 1.0
 name: custom-image-definition-sample
-image: tianyiyuan_gallery/SyncSysPrep-625@1.0.0
+image: tianyiyuan_gallery/SyncSysPrep-625@0.0.1
 tasks:
   - name: choco
     parameters:
