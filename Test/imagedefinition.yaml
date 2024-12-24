@@ -3,7 +3,7 @@ name: tianyi-nc-test-image
 image: MicrosoftVisualStudio_visualstudio2019plustools_vs-2019-pro-general-win11-m365-gen2
 buildProperties:
  # networkConnection: tianyi-nc-test
-  networkConnection: test-custom-nv
+  networkConnection: test-custom-nc
 tasks:
   - name: chocoss
     parameters:
