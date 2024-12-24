@@ -1,7 +1,7 @@
 $schema: "1.0"
 name: tianyi-nc-test-image
 image: MicrosoftVisualStudio_visualstudio2019plustools_vs-2019-pro-general-win11-m365-gen2
-buildPropertiess:
+buildProperties:
   networkConnection: tianyi-nc-test
 tasks:
   - name: choco
