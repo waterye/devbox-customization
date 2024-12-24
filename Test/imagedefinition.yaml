@@ -5,5 +5,5 @@ buildProperties:
   networkConnection: tianyi-nc-test
 tasks:
   - name: choco
-  parameters:
+    parameters:
       package: notepadplusplus.install
