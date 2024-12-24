@@ -4,6 +4,6 @@ image: MicrosoftVisualStudio_visualstudio2019plustools_vs-2019-pro-general-win11
 buildProperties:
   networkConnection: tianyi-nc-test
 tasks:
-  - name: choco
+  - name: chocoss
     parameters:
       package: notepadplusplus.install
