@@ -5,3 +5,6 @@ tasks:
   - name: choco
     parameters:
       package: notepadplusplus.install
+  - name: ~/winget
+    parameters:
+      package: 7zip.7zip
