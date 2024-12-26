@@ -1,6 +1,6 @@
 $schema: 1.0
 name: image-definition-sample
-image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
+image: tianyiyuan_gallery/SyncSysPrep-625@0.0.1
 tasks:
   - name: choco
     parameters:
@@ -8,7 +8,3 @@ tasks:
   - name: ~/winget
     parameters:
       package: 7zip.7zip
-userTasks:
-  - name: ~/powershell
-    parameters:
-      command: "Write-Host $(whoami)"
