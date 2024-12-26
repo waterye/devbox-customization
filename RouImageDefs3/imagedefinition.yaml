@@ -1,0 +1,7 @@
+$schema: 1.0
+name: custom-image-definition-latest-sample-3
+image: tianyiyuan_gallery/SyncSysPrep-625
+tasks:
+  - name: choco
+    parameters:
+      package: notepadplusplus.install
