@@ -1,6 +1,6 @@
 $schema: 1.0
-name: custom-image-definition-latest-sample-3
-image: tianyiyuan_gallery/SyncSysPrep-625
+name: ent-cpc-win10-22h2-ent-cpc-m365-latest
+image: TestCustomImageGallery/ent-cpc-win10-22h2-ent-cpc-m365
 tasks:
   - name: choco
     parameters:
