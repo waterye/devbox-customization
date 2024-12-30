@@ -2,9 +2,12 @@ $schema: "1.0"
 name: tianyi-nc-test-image
 image: MicrosoftVisualStudio_visualstudio2019plustools_vs-2019-pro-general-win11-m365-gen2
 buildProperties:
- # networkConnection: tianyi-nc-test
-  networkConnection: test-custom-nc
+  networkConnection: tianyi-nc-test
+  #networkConnection: test-custom-nc
 tasks:
   - name: choco
     parameters:
       package: notepadplusplus.install
+  - name: "~/powershell"
+    parameters:
+      command: "arp -a"
