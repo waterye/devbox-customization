@@ -10,4 +10,7 @@ tasks:
       package: notepadplusplus.install
   - name: "~/powershell"
     parameters:
-      command: "arp -a"
+      command: "$(Get-WmiObject Win32_Computersystem).name"
+  - name: "~/powershell"
+    parameters:
+      command: "ipconfig /all"
