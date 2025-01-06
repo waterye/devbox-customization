@@ -1,10 +1,11 @@
 $schema: 1.0
-name: ent-cpc-win10-22h2-ent-cpc-m365-latest
-image: TestCustomImageGallery/ent-cpc-win10-22h2-ent-cpc-m365
+name: ent-cpc-win11-22h2-ent-cpc-m365
+image: ~Gallery~TestCustomImageGallery~ent-cpc-win11-22h2-ent-cpc-m365@1.0.0
 tasks:
   - name: choco
     parameters:
       package: notepadplusplus.install
-  - name: ~/winget
+userTasks:
+  - name: quickstart/powershell
     parameters:
-      package: 7zip.7zip
+      command: "Write-Host $(whoami)"

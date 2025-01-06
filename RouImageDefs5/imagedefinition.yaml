@@ -1,6 +1,6 @@
 $schema: 1.0
-name: ent-cpc-win11-22h2-ent-cpc-m365-no-version
-image: TestCustomImageGallery/ent-cpc-win11-22h2-ent-cpc-m365
+name: ent-cpc-win10-22h2-ent-cpc-m365-latest
+image: TestCustomImageGallery/ent-cpc-win10-22h2-ent-cpc-m365
 tasks:
   - name: choco
     parameters:
