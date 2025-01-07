@@ -1,6 +1,6 @@
 $schema: 1.0
 name: test-update-image
-image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365@1.0.0
+image: TestCustomImageGallery/ent-cpc-win11-22h2-ent-cpc-m365@1.0.0
 tasks:
   - name: choco
     parameters:
