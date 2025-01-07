@@ -7,7 +7,7 @@ tasks:
       package: notepadplusplus.install
   - name: powershell
     parameters:
-      command: "Write-Host $(whoami)"
+      command: "Write-Host $(whoami) 123"
   - name: ~/powershell
     parameters:
       command: "Write-Host $(whoami)"
