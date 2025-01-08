@@ -1,0 +1,11 @@
+$schema: 1.0
+name: win11-23h2-ent-no-version
+image: KesuTestGallery/win11-23h2-ent
+tasks:
+  - name: choco
+    parameters:
+      package: notepadplusplus.install
+userTasks:
+  - name: quickstart/powershell
+    parameters:
+      command: "Write-Host $(whoami)"
