@@ -1,6 +1,6 @@
 $schema: 1.0
 name: KesuTestGallery-win11-23h2-ent-NC-SG
-image: KesuTestGallery/win11-23h2-ent@1.0.0
+image: KesuTestGallery/win11-23h2-ent@1.0.1
 buildProperties:
   networkConnection: tianyi-nc-test
 tasks:
