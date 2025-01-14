@@ -1,0 +1,19 @@
+$schema: 1.0
+name: KesuTestGallery-win11-23h2-ent-NC-SG
+image: KesuTestGallery/win11-23h2-ent@1.0.0
+buildProperties:
+  networkConnection: tianyi-nc-test
+tasks:
+  - name: choco
+    parameters:
+      package: notepadplusplus.install
+  - name: powershell
+    parameters:
+      command: "Write-Host $(whoami)"
+  - name: ~/powershell
+    parameters:
+      command: "Write-Host $(whoami)"
+userTasks:
+  - name: quickstart/powershell
+    parameters:
+      command: "Write-Host $(whoami)"
