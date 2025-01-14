@@ -1,6 +1,8 @@
 $schema: 1.0
 name: ent-cpc-win10-22h2-ent-cpc-m365-latest
 image: TestCustomImageGallery/ent-cpc-win10-22h2-ent-cpc-m365
+buildProperties:
+  networkConnection: japaneast-native
 tasks:
   - name: choco
     parameters:
