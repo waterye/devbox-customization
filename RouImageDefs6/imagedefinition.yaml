@@ -2,7 +2,7 @@ $schema: 1.0
 name: test-update-image
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365@1.0.0
 buildProperties:
-  networkConnection: shared-westus3
+  networkConnection: japaneast-native
 tasks:
   - name: choco
     parameters:
