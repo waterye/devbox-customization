@@ -1,6 +1,6 @@
 $schema: 1.0
 name: KesuTestGallery-win11-23h2-ent
-image: KesuTestGallery/win11-23h2-ent@1.0.0
+image: KesuTestGallery/win11-23h2-ent@1.0.1
 tasks:
   - name: choco
     parameters:
