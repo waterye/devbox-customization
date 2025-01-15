@@ -1,6 +1,6 @@
 $schema: 1.0
 name: ent-cpc-win10-22h2-ent-cpc-m365-latest
-image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
+image: TestCustomImageGallery/ent-cpc-win10-22h2-ent-cpc-m365
 buildProperties:
   networkConnection: shared-westus3
 tasks:
