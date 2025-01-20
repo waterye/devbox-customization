@@ -1,9 +1,0 @@
-$schema: 1.0
-name: git-clone-team-ado
-image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
-tasks:
-  - name: TianyiCustomization/git-clone-new
-    parameters:
-        repositoryUrl: https://github.com/chikaishiro/devbox-customization-private
-        directory: C:\Test\SystemTask
-        pat: "{{https://yao-kv-customization.vault.azure.net/secrets/tianyi-github/49bd09d4ba414d229f2ba6703e3edc20}}"
