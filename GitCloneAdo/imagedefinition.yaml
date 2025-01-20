@@ -1,0 +1,10 @@
+$schema: 1.0
+name: git-clone-team-ado
+image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
+tasks:
+  - name: TianyiCustomization/git-clone-new
+    parameters:
+        repositoryUrl: https://dev.azure.com/devdiv/OnlineServices/_git/azure-devbox-copilot
+        directory: C:\Test\SystemTask
+        pat: "{{ado}}"
+        branch: "tianyiyuan/UpdateLogo"
