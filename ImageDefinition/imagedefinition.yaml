@@ -5,13 +5,13 @@ tasks:
   - name: choco
     parameters:
       package: notepadplusplus.install
-    timeout: 60
+    timeout: 1
   - name: ~/winget
     parameters:
       package: 7zip.7zip
-    timeout: 60
+    timeout: 1
 userTasks:
   - name: ~/powershell
     parameters:
       command: "Write-Host $(whoami)"
-    timeout: 60
+    timeout: 1
