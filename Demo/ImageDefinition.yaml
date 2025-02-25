@@ -1,0 +1,12 @@
+$schema: "1.0"
+name: demo-custom-image-anc
+image: TestCustomImageGallery/ent-cpc-win11-22h2-ent-cpc-m365   
+buildProperties:
+  networkConnection: tianyi-nc-test
+tasks:
+  - name: choco
+    parameters:
+      package: notepadplusplus.install
+  - name: "~/powershell"
+    parameters:
+      command: "$(Get-WmiObject Win32_Computersystem).name"
