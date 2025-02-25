@@ -5,6 +5,7 @@ tasks:
   - name: choco
     parameters:
       package: notepadplusplus.install
-  - name: ~/winget
+userTasks:
+  - name: quickstart/powershell
     parameters:
-      package: 7zip.7zip
+      command: "Write-Host $(whoami)"
