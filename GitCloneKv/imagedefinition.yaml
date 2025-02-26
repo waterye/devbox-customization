@@ -2,7 +2,7 @@ $schema: 1.0
 name: git-clone-team-kv
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
 tasks:
-  - name: TianyiCustomization/git-clone-new
+  - name: ~/GitClone
     parameters:
         repositoryUrl: https://github.com/chikaishiro/devbox-customization-private
         directory: C:\Test\SystemTask
