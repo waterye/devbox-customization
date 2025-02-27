@@ -1,33 +1,11 @@
 $schema: "1.0"
 name: "frontend-eng"
 # Using the "Windows 11 Enterprise 24H2" image as the base
-image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
 description: "This definition is for the eShop frontend engineering environment"
 
 tasks:
   - name: ~/winget
     description: Install AZD
     parameters:
-      package:  Microsoft.Azd
-
-  - name: ~/winget
-    description: Install NodeJS
-    parameters:
-      package: OpenJS.NodeJS
-
-  - name: ~/winget
-    description: Install MongoDB
-    parameters:
-      package: MongoDB.Server
-
-  - name: ~/winget
-    description: Install Visual Studio Code
-    parameters:
-      package:  Microsoft.VisualStudioCode
-
-  - name: ~/powershell
-    parameters:
-      command: |
-        $env:Path = [System.Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [System.Environment]::GetEnvironmentVariable('Path','User') 
-        code --install-extension github.copilot
-        code --install-extension github.copilot-chat        
+      package:  Python.Python.3.11
