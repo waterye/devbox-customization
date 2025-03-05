@@ -1,7 +1,7 @@
-$schema: "1.0"
+$schema: 1.0
 name: tianyi-winget-test
 image: microsoftwindowsdesktop_windows_ent-cpc_win11-24h2-ent-cpc
 tasks:
-  - name: "~/winget"
+  - name: ~/winget
     parameters:
-      package: Microsoft.VisualStudioCode
+        package: Microsoft.VisualStudioCode
