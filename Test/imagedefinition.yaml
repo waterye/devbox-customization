@@ -1,6 +1,6 @@
 $schema: "1.0"
 name: tianyi-nc-test-image
-image: microsoftwindowsdesktop_windows_ent-cpc_win11-24h2-ent-cpc
+image: microsoftwindowsdesktop_windows-ent-cpc_win11-24h2-ent-cpc-m365
 buildProperties:
   networkConnection: tianyi-nc-test
   #networkConnection: test-custom-nc
