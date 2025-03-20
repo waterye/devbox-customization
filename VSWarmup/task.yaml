@@ -2,12 +2,12 @@
 $schema: "1.0"
 name: "devbox-customization"
 userTasks:
-  - name: git-clone
+  - name: ~/git-clone
     description: Clone this repository into C:\Workspaces
     parameters:
       repositoryUrl: https://github.com/jialongcheng/VSWarmup.git
       directory: C:\Workspaces
-  - name: powershell
+  - name: ~/powershell
     description: warmup VS
     parameters:
       command: ".\\WarmupVS.ps1 -MinVSVersion 17.14.35904.62 -VSParameters '/automaticsignin /nosplash /DoNotShowMainWindow /Command File.Exit'"
