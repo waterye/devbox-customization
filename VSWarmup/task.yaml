@@ -1,0 +1,14 @@
+# This is a Visual Studio extension installation task for Dev Box.
+$schema: "1.0"
+name: "devbox-customization"
+userTasks:
+  - name: git-clone
+    description: Clone this repository into C:\Workspaces
+    parameters:
+      repositoryUrl: https://github.com/jialongcheng/VSWarmup.git
+      directory: C:\Workspaces
+  - name: powershell
+    description: warmup VS
+    parameters:
+      command: ".\\WarmupVS.ps1 -MinVSVersion 17.14.35904.62 -VSParameters '/automaticsignin /nosplash /DoNotShowMainWindow /Command File.Exit'"
+      workingDirectory: "C:\\Workspaces\\VSWarmup"
