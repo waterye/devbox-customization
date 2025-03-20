@@ -6,11 +6,11 @@ userTasks:
     parameters:
       repositoryUrl: https://github.com/jialongcheng/VSWarmup.git
       directory: C:\Workspaces
-  # - name: ~/powershell
-  #   parameters:
-  #     command: ".\\WarmupVS.ps1 -MinVSVersion 17.14.35904.62 -VSParameters '/automaticsignin /nosplash /DoNotShowMainWindow /Command File.Exit'"
-  #     workingDirectory: "C:\\Workspaces\\VSWarmup"
   - name: ~/powershell
     parameters:
-      script: C:\\Workspaces\\VSWarmup\\WarmupVS.ps1
-      args: "-MinVSVersion 17.14.35904.62 -VSParameters '/automaticsignin /nosplash /DoNotShowMainWindow /Command File.Exit'"
+      command: ".\\WarmupVS.ps1 -MinVSVersion 17.14.35904.62 -VSParameters '/automaticsignin /nosplash /DoNotShowMainWindow /Command File.Exit'"
+      workingDirectory: "C:\\Workspaces\\VSWarmup"
+  #- name: ~/powershell
+  #  parameters:
+  #    script: C:\\Workspaces\\VSWarmup\\WarmupVS.ps1
+  #    args: "-MinVSVersion 17.14.35904.62 -VSParameters '/automaticsignin /nosplash /DoNotShowMainWindow /Command File.Exit'"
