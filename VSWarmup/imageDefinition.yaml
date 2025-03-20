@@ -2,7 +2,7 @@ $schema: "1.0"
 name: "devbox-customization"
 image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
 userTasks:
-  - name: ~/git-clone
+  - name: git-clone
     parameters:
       repositoryUrl: https://github.com/jialongcheng/VSWarmup.git
       directory: C:\Workspaces
