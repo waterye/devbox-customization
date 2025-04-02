@@ -15,7 +15,7 @@ name: "parentImage"
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
 
 tasks:
-  - name: quickstart/winget
+  - name: quick-start/winget
     parameters:
       package: Microsoft.WSL
       
