@@ -19,7 +19,7 @@ tasks:
     parameters:
       package: Microsoft.WSL
       
-  - name: -/winget
+  - name: ~/winget
     parameters:
       package: Microsoft.WSL
 
