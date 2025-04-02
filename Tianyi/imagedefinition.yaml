@@ -15,7 +15,7 @@ name: "HostOps"
 extends:
   imageDefinition: parentImage
 tasks:
-  - name: quick-start/winget
+  - name: ~/winget
     parameters:
       downloadUrl: 'https://raw.githubusercontent.com/contoso-co/common-eng-sys/main/dsc-configurations/common-config.dsc.yaml'
   
