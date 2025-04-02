@@ -81,7 +81,7 @@ tasks:
 
   - name: ~/winget
     parameters:
-      package: Notepad++.Notepad++
+      package: 7zip.7zip
   
 userTasks: 
   - name: ~/powershell
