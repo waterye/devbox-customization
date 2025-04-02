@@ -13,7 +13,8 @@
 $schema: "1.0"
 name: "HostOps"
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
-
+extends:
+  imageDefinition: parentImage
 tasks:
   - name: ~/winget
     parameters:
