@@ -11,6 +11,6 @@ tasks:
     parameters:
       package: 7zip.7zip
 userTasks:
-  - name: quickstart/powershell
+  - name: powershell
     parameters:
       command: "Write-Host $(whoami)"
