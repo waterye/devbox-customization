@@ -2,9 +2,9 @@ $schema: 1.0
 name: ent-cpc-win11-22h2-ent-cpc-m365-no-version
 image: TestCustomImageGallery/ent-cpc-win11-22h2-ent-cpc-m365
 tasks:
-  - name: choco
+  - name: ~/winget
     parameters:
-      package: notepadplusplus.install
+      package: 7zip.7zip
 userTasks:
   - name: quickstart/powershell
     parameters:
