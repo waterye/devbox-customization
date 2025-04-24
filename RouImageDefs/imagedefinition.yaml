@@ -9,6 +9,3 @@ userTasks:
   - name: ~/powershell
     parameters:
       command: "Write-Host $(whoami)"
-  - name: ~/powershell
-    parameters:
-      script: winget install --id=Microsoft.PowerToys --accept-package-agreements --accept-source-agreements winget install --id=Microsoft.VisualStudioCode --accept-package-agreements --accept-source-agreements winget install --id=Microsoft.WindowsTerminal --accept-package-agreements --accept-source-agreements winget install --id=Git.GitHubDesktop --accept-package-agreements --accept-source-agreements
