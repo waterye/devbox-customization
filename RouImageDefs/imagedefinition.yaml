@@ -6,6 +6,6 @@ tasks:
     parameters:
       package: notepadplusplus.install
 userTasks:
-  - name: quickstart/powershell
+  -name: quickstart/powershell
     parameters:
       command: "Write-Host $(whoami)"
