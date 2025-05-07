@@ -7,11 +7,12 @@ param(
 
 # Perform download of DSC from GitHub
 function Invoke-DSCDownload {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls13
+
     # Download latest release from GitHub
     $project = 'PowerShell/DSC'
     $arch = 'x86_64-pc-windows-msvc'
     $restParameters = @{
-        SslProtocol = 'Tls13'
         Headers     = @{'X-GitHub-Api-Version' = '2022-11-28' }
     }
     # Call GitHub public API to get latest release URL
