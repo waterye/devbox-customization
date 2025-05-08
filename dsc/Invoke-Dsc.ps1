@@ -110,11 +110,15 @@ if (-not (Test-DSCInstalled)) {
     Install-DSC -path (Get-UserContext)
 }
 
+Write-Output "DSC is installed."
+
 # Get path to dsc.exe
 $dsc = Get-Command 'dsc' -ErrorAction Ignore | ForEach-Object Source
 if ($null -eq $dsc) {
     $dsc = Join-Path (Get-InstallLocation -Path (Get-UserContext)) 'dsc.exe'
 }
+
+Write-Output "DSC path: $dsc"
 
 # Make sure inline content is string
 if ('string' -ne $inlineConfiguration.gettype().name) { $inlineConfiguration = $inlineConfiguration | Out-String }
@@ -134,4 +138,8 @@ else {
     throw 'No configuration provided'
 }
 
-$configuration | & $dsc config set
+$tempYamlFile = Join-Path $env:TEMP "dsc_config_$(Get-Random).yaml"
+$configuration | Out-File -FilePath $tempYamlFile -Encoding utf8
+Write-Output "Configuration saved to $tempYamlFile"
+Write-Output "Running dsc config get with file parameter..."
+& $dsc config set --file $tempYamlFile
