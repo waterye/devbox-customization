@@ -105,6 +105,8 @@ function Get-PathType {
 
 # Main
 
+Write-Output $inlineConfiguration
+
 # If DSC is not installed, install it
 if (-not (Test-DSCInstalled)) {
     Install-DSC -path (Get-UserContext)
@@ -137,6 +139,8 @@ elseif (-not [string]::IsNullorEmpty($inlineConfiguration)) {
 else {
     throw 'No configuration provided'
 }
+
+Write-Output $configuration
 
 $tempYamlFile = Join-Path $env:TEMP "dsc_config_$(Get-Random).yaml"
 $configuration | Out-File -FilePath $tempYamlFile -Encoding utf8
