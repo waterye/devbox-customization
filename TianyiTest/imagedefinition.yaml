@@ -2,6 +2,6 @@ $schema: 1.0
 name: tianyi-winget-test
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-24h2-ent-cpc-m365
 tasks:
-  - name: install-vs-extension
+  - name: choco
     parameters:
-      marketplaceItemName: 123
+      package: filezilla
