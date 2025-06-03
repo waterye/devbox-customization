@@ -1,7 +1,20 @@
 $schema: 1.0
 name: imaging-test
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
+description: "This definition is for the marketplace win 10 22h2"
+
 tasks:
-    - name: choco
-      parameters:
-        package: notepadplusplus.install
+  - name: ~/powershell
+    parameters:
+      command: |
+        mkdir 'c:/system-task-folder-auto-created'
+
+  - name: winget
+    parameters:
+      package: Python.Python.3.11
+      version: 3.11.1
+
+  - name: winget
+    parameters:
+      package: Docker.DockerDesktop
+      version: 4.41.2
