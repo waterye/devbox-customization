@@ -1,6 +1,6 @@
 $schema: 1.0
 name: imaging-test
-image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
+image: microsoftwindowsdesktop_windows-ent-cpc_win11-22h2-ent-cpc-os
 description: "This definition is for the marketplace win 10 22h2"
 
 tasks:
