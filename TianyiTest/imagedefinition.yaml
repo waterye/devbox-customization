@@ -1,5 +1,5 @@
 $schema: "1.0"
-name: "marketplace-win11-24h2-with-pwsh-commands-2"
+name: tianyi-winget-test
 image: "microsoftwindowsdesktop_windows-ent-cpc_win11-24h2-ent-cpc"
 description: "This definition is for the marketplace win 10 22h2"
 
@@ -13,8 +13,3 @@ tasks:
     parameters:
       package: Python.Python.3.11
       version: 3.11.1
-
-  - name: winget
-    parameters:
-      package: Docker.DockerDesktop
-      version: 4.41.2
